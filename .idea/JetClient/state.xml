@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="id" value="dd3ff097-2080-4349-9243-3685a0006f8a" />
+          <option name="name" value="pyatv-service" />
+          <option name="requests">
+            <list>
+              <requestState>
+                <option name="id" value="7470fe01-4b7d-483d-825b-dc5d4287bc5c" />
+                <option name="method" value="GET" />
+                <option name="name" value="Scan devices" />
+                <option name="url" value="http://localhost:8080/scan" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;remote_name&quot;: &quot;pyatv-service&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="dc3510d2-4eac-4b73-ae43-6bb3869545de" />
+                <option name="method" value="POST" />
+                <option name="name" value="Start pairing" />
+                <option name="url" value="http://localhost:8080/start_pairing/C0:95:6D:66:7A:F8" />
+              </requestState>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;pin&quot;: &quot;7637&quot;,&#10;  &quot;device_provides_pin&quot;: true&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="404f0275-17bc-40b6-8062-cd42fa21d351" />
+                <option name="method" value="POST" />
+                <option name="name" value="Finalize pairing" />
+                <option name="url" value="http://localhost:8080/finalize_pairing/2baa5c8f-47b7-401b-9ad7-28e446098099" />
+              </requestState>
+              <requestState>
+                <option name="id" value="ef044671-eee6-4c45-b4ed-53deead30144" />
+                <option name="method" value="POST" />
+                <option name="name" value="Turn device off" />
+                <option name="url" value="http://localhost:8080/control/turn_off/C0:95:6D:66:7A:F8" />
+              </requestState>
+              <requestState>
+                <option name="id" value="7932b798-f3a4-4dd4-8339-ac46566a8d6d" />
+                <option name="method" value="POST" />
+                <option name="name" value="Turn device on" />
+                <option name="url" value="http://localhost:8080/control/turn_on/C0:95:6D:66:7A:F8" />
+              </requestState>
+              <requestState>
+                <option name="id" value="054c564c-7464-435d-8fe8-fe3b88fe804f" />
+                <option name="method" value="POST" />
+                <option name="name" value="Push Select" />
+                <option name="url" value="http://localhost:8080/control/select/C0:95:6D:66:7A:F8" />
+              </requestState>
+              <requestState>
+                <option name="id" value="7d5830a8-acaf-4103-a667-585693182b39" />
+                <option name="method" value="POST" />
+                <option name="name" value="Push Play/Pause" />
+                <option name="url" value="http://localhost:8080/control/play_pause/C0:95:6D:66:7A:F8" />
+              </requestState>
+              <requestState>
+                <option name="id" value="b484a512-a1b6-491b-a8f9-b830cb5a7b37" />
+                <option name="method" value="POST" />
+                <option name="name" value="Push Back" />
+                <option name="url" value="http://localhost:8080/control/back/C0:95:6D:66:7A:F8" />
+              </requestState>
+              <requestState>
+                <option name="id" value="ad58a70f-c46c-40eb-9e24-9b96841ce038" />
+                <option name="method" value="POST" />
+                <option name="name" value="Push Volume Up" />
+                <option name="url" value="http://localhost:8080/control/volume_up/C0:95:6D:66:7A:F8" />
+              </requestState>
+              <requestState>
+                <option name="id" value="a6cb92b7-ba70-4dca-8519-979bbfa5c389" />
+                <option name="method" value="POST" />
+                <option name="name" value="Push Volume Down" />
+                <option name="url" value="http://localhost:8080/control/volume_down/C0:95:6D:66:7A:F8" />
+              </requestState>
+              <requestState>
+                <option name="id" value="c9a9a457-f190-4102-93cd-901a5092a3c2" />
+                <option name="method" value="POST" />
+                <option name="name" value="Push Home" />
+                <option name="url" value="http://localhost:8080/control/home/C0:95:6D:66:7A:F8" />
+              </requestState>
+            </list>
+          </option>
+          <option name="sortWeight" value="1000000" />
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="folderPath" value="$PROJECT_DIR$/.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+        </folderState>
+      </list>
+    </option>
+    <option name="id" value="477473e6-b09a-4164-99e8-078d8aa5e41b" />
+  </component>
+</project>
