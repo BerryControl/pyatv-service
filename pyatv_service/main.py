@@ -24,11 +24,12 @@ from pyatv_service.pyatv_storage import initialize_pyatv_storage
 
 def main():
     parser = ArgumentParser(prog='pyatv-service', description='pyatv REST API for YUSR Remote')
-    parser.add_argument('port', help='Port on which the service is listening', type=int)
+    parser.add_argument('port', help='Port on which the service is listening.', type=int)
+    parser.add_argument('storage_file', help='Fully-qualified filename where the settings are stored.', type=str)
     args = parser.parse_args()
 
     # TODO make the storage path configurable
-    initialize_pyatv_storage("/Users/thomas/pyatv.conf")
+    initialize_pyatv_storage(args.storage_file)
 
     run(host='localhost', port=args.port)
 

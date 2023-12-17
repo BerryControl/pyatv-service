@@ -38,7 +38,7 @@ def start_pairing(device_id: str):
         return "Device not found"
 
     payload = json.load(request.body)
-    remote_name: str = payload["remote_name"]
+    remote_name: str = payload["remoteName"]
 
     apple_tv_device = devices[0]
     pairing_handler = synchronized(pyatv.pair(config=apple_tv_device, protocol=pyatv.Protocol.Companion, loop=loop,
@@ -49,8 +49,8 @@ def start_pairing(device_id: str):
 
     response.content_type = 'application/json'
     return json.dumps({
-        "pairing_request": pairing_request,
-        "device_provides_pin": pairing_handler.device_provides_pin
+        "pairingRequest": pairing_request,
+        "deviceProvidesPin": pairing_handler.device_provides_pin
     })
 
 
@@ -64,7 +64,7 @@ def finalize_pairing(pairing_request: str):
 
     payload = json.load(request.body)
     pin: str = payload["pin"]
-    device_provides_pin: bool = payload["device_provides_pin"]
+    device_provides_pin: bool = payload["deviceProvidesPin"]
 
     if device_provides_pin:
         pairing_handler.pin(pin)
@@ -78,5 +78,5 @@ def finalize_pairing(pairing_request: str):
 
     response.content_type = 'application/json'
     return json.dumps({
-        "device_has_paired": device_has_paired
+        "deviceHasPaired": device_has_paired
     })

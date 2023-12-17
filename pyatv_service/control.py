@@ -111,7 +111,7 @@ def back(device_id: str):
 
 
 @post('/control/volume_up/<device_id>')
-def back(device_id: str):
+def volume_up(device_id: str):
     def __volume_up(atv):
         synchronized(atv.audio.volume_up())
 
@@ -119,7 +119,7 @@ def back(device_id: str):
 
 
 @post('/control/volume_down/<device_id>')
-def back(device_id: str):
+def volume_down(device_id: str):
     def __volume_down(atv):
         synchronized(atv.audio.volume_down())
 
@@ -127,7 +127,7 @@ def back(device_id: str):
 
 
 @post('/control/home/<device_id>')
-def back(device_id: str):
+def home(device_id: str):
     def __home(atv):
         synchronized(atv.remote_control.home())
 
